@@ -12,13 +12,29 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <app-button [text]="'Azul'" [classColor]="'primary'"></app-button>
+      <app-button
+        [size]="'small'"
+        [outline]="true"
+        [text]="'Azul'"
+        [classColor]="'primary'"
+        [badge]="'123'"
+      ></app-button>
     </div>
     <div class="col">
-      <app-button [text]="'Vermelho'" [classColor]="'danger'"></app-button>
+      <app-button
+        [outline]="false"
+        [text]="'Vermelho'"
+        [classColor]="'danger'"
+        [badgeCorner]="'true'"
+      ></app-button>
     </div>
     <div class="col">
-      <app-button [text]="'Amarelo'" [classColor]="'warning'"></app-button>
+      <app-button
+        [size]="'big'"
+        [outline]="true"
+        [text]="'Amarelo'"
+        [classColor]="'warning'"
+      ></app-button>
     </div>
   </div>
 </div>
